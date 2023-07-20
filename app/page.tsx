@@ -3,8 +3,6 @@ export default async function Home() {
     next: { tags: ['poe-ninjas'], revalidate: 4000 },
   }).then((res) => res.json());
 
-  console.log(thing);
-
   return (
     <div>{JSON.stringify(thing)}</div>
   );
