@@ -1,6 +1,6 @@
 export default async function Home() {
   const thing = await fetch(`http://localhost:3000/api`, {
-    next: { tags: ['poe-ninjas'], revalidate: 4000 },
+    next: { tags: ['tag1'], revalidate: 4000 },
   }).then((res) => res.json());
 
   return (
